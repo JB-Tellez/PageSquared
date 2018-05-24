@@ -29,7 +29,7 @@
   <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
   <script>
     page('/', () => page.redirect('/home'));
-    page('/home' () -> console.log('home'));
+    page('/home' () => console.log('home'));
     page('/about', () => console.log('about'));
     page('/nested/route', () => console.log('nested route'));
     page.start({hashbang:true});
