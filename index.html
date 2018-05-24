@@ -15,7 +15,7 @@
   <nav>
     <ul>
       <li>
-        <a href="/" class="icon-home"></a>
+        <a href="/home" class="icon-home"></a>
       </li>
       <li>
         <a href="/about" class="icon-price-tag"></a>
@@ -28,11 +28,12 @@
  
   <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
   <script>
-    page('/', () => console.log('home'));
+    page('/', () => page.redirect('/home'));
+    page('/home' () -> console.log('home'));
     page('/about', () => console.log('about'));
     page('/nested/route', () => console.log('nested route'));
     page.start({hashbang:true});
-    console.log('v0.0.5');
+    console.log('v0.0.6');
   </script>
 </body>
 
