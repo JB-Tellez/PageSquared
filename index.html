@@ -16,12 +16,12 @@
   <nav>
     <ul>
       <li>
-        <a href="/" class="icon-home"></a>
+        <a href="./" class="icon-home"></a>
       </li>
       <li>
-        <a href="/about" class="icon-price-tag"></a>
+        <a href="./about" class="icon-price-tag"></a>
       </li>
-      <li><a href="/nested/route" class="icon-fire"></a></li>
+      <li><a href="./nested/route" class="icon-fire"></a></li>
     </ul>
   </nav>
   <h1>Single Page App on GitHub Pages</h1>
@@ -33,6 +33,8 @@
     page('/about', () => console.log('about'));
     page('/nested/route', () => console.log('nested route'));
     page.start({hashbang:true});
+
+    console.log('v0.0.1');
   </script>
 </body>
 
